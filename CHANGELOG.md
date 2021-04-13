@@ -2,6 +2,6 @@
 
 All notable changes to `mock-models` will be documented in this file
 
-## 1.0.0 - 201X-XX-XX
 
-- initial release
+## 0.1.0 - 2021-04-13
+- initial pre-release
