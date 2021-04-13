@@ -1,4 +1,4 @@
-# Very short description of the package
+# Mock Models
 
 [![Packagist PHP support](https://img.shields.io/packagist/php-v/sfneal/mock-models)](https://packagist.org/packages/sfneal/mock-models)
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/sfneal/mock-models.svg?style=flat-square)](https://packagist.org/packages/sfneal/mock-models)
@@ -6,7 +6,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/sfneal/mock-models.svg?style=flat-square)](https://scrutinizer-ci.com/g/sfneal/mock-models)
 [![Total Downloads](https://img.shields.io/packagist/dt/sfneal/mock-models.svg?style=flat-square)](https://packagist.org/packages/sfneal/mock-models)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+Mock Eloquent Models that can be used in test suites without having to muddle up your test directory with mocks.
 
 ## Installation
 
