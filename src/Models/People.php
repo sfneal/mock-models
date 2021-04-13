@@ -94,7 +94,7 @@ class People extends Model
     }
 
     /**
-     * Retrieve the 'age' attribute
+     * Retrieve the 'age' attribute.
      *
      * @param $value
      * @return int
