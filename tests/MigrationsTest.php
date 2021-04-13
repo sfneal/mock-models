@@ -2,7 +2,6 @@
 
 namespace Sfneal\Testing\Tests;
 
-
 use Sfneal\Testing\Models\People;
 
 class MigrationsTest extends TestCase

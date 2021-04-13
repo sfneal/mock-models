@@ -24,7 +24,7 @@ class TestCase extends OrchestraTestCase
     {
         return [
             MockModelsServiceProvider::class,
-            AddressServiceProvider::class
+            AddressServiceProvider::class,
         ];
     }
 
