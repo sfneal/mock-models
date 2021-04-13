@@ -5,6 +5,8 @@ namespace Sfneal\Testing\Tests;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
+use Sfneal\Address\Models\Address;
+use Sfneal\Address\Providers\AddressServiceProvider;
 use Sfneal\Testing\Models\People;
 use Sfneal\Testing\Providers\MockModelsServiceProvider;
 
@@ -22,6 +24,7 @@ class TestCase extends OrchestraTestCase
     {
         return [
             MockModelsServiceProvider::class,
+            AddressServiceProvider::class
         ];
     }
 
@@ -36,6 +39,10 @@ class TestCase extends OrchestraTestCase
         // Migrate 'people' table
         include_once __DIR__.'/../database/migrations/create_people_table.php.stub';
         (new \CreatePeopleTable())->up();
+
+        // Migrate 'address table
+        include_once __DIR__.'/../vendor/sfneal/address/database/migrations/create_address_table.php.stub';
+        (new \CreateAddressTable())->up();
     }
 
     /**
@@ -49,7 +56,8 @@ class TestCase extends OrchestraTestCase
 
         // Create model factories
         People::factory()
-            ->count(20)
+            ->count(50)
+            ->has(Address::factory(), 'address')
             ->create();
     }
 }

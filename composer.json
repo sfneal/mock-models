@@ -17,6 +17,7 @@
     ],
     "require": {
         "php": ">=7.3",
+        "sfneal/address": "^1.2",
         "sfneal/models": "^2.2"
     },
     "require-dev": {
