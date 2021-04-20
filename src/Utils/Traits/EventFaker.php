@@ -9,12 +9,13 @@ trait EventFaker
     /**
      * Setup Event faking.
      *
+     * @param  array|string  $eventsToFake
      * @return void
      */
-    protected function eventFaker(): void
+    protected function eventFaker($eventsToFake = []): void
     {
         // Enable event faking
-        Event::fake();
+        Event::fake($eventsToFake);
 
         // Assert that no events were dispatched...
         Event::assertNothingDispatched();
