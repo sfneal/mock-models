@@ -3,8 +3,15 @@
 namespace Sfneal\Testing\Tests;
 
 use Sfneal\Testing\Models\People;
+use Sfneal\Testing\Utils\Interfaces\Factory\AttributesTest;
+use Sfneal\Testing\Utils\Interfaces\Factory\FillablesTest;
+use Sfneal\Testing\Utils\Interfaces\Factory\RelationshipAttributesTest;
+use Sfneal\Testing\Utils\Interfaces\Factory\RelationshipFillablesTest;
 
-class FactoriesTest extends TestCase
+class FactoriesTest extends TestCase implements AttributesTest,
+                                                FillablesTest,
+                                                RelationshipAttributesTest,
+                                                RelationshipFillablesTest
 {
     /**
      * @var People
