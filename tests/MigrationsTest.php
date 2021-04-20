@@ -3,27 +3,30 @@
 namespace Sfneal\Testing\Tests;
 
 use Sfneal\Testing\Models\People;
+use Sfneal\Testing\Utils\Traits\ModelAttributeAssertions;
 
 class MigrationsTest extends TestCase
 {
+    use ModelAttributeAssertions;
+
     /** @test */
     public function people_table_is_accessible()
     {
+        // Expected data
+        $data = [
+            'name_first' => 'Johnny',
+            'name_last' => 'Tsunami',
+            'email' => 'johnny.tsunami@example.com',
+            'age' => 22,
+        ];
+
         // Save a new Address
-        $person = new People();
-        $person->name_first = 'Johnny';
-        $person->name_last = 'Tsunami';
-        $person->email = 'johnny.tsunami@example.com';
-        $person->age = 22;
-        $person->save();
+        $person = People::query()->create($data);
 
         // Retrieve the new Address
         $newPerson = People::query()->find($person->person_id);
 
         // Assert Jokes are the same
-        $this->assertSame($newPerson->name_first, 'Johnny');
-        $this->assertSame($newPerson->name_last, 'Tsunami');
-        $this->assertSame($newPerson->email, 'johnny.tsunami@example.com');
-        $this->assertSame($newPerson->age, 22);
+        $this->modelAttributeAssertions($data, $newPerson);
     }
 }
