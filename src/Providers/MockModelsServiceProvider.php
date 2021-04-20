@@ -3,9 +3,15 @@
 namespace Sfneal\Testing\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Sfneal\Address\Providers\AddressServiceProvider;
 
 class MockModelsServiceProvider extends ServiceProvider
 {
+    /**
+     * Bootstrap any MockModel services.
+     *
+     * @return void
+     */
     public function boot()
     {
         // Publish migration file (if not already published)
