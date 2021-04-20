@@ -11,7 +11,7 @@ trait QueueFaker
      *
      * @return void
      */
-    protected function eventFaker(): void
+    protected function queueFaker(): void
     {
         // Enable queue faking
         Queue::fake();
