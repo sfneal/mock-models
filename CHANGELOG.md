@@ -14,3 +14,7 @@ All notable changes to `mock-models` will be documented in this file
 ## 0.2.1 - 2021-04-20
 - fix sfneal/address composer requirement to allow for 'dev' & 'master' branch installations
 - add $eventsToFake param to `EventFaker` trait's `eventFaker()` method
+
+
+## 0.2.2 - 2021-04-20
+- fix sfneal/address composer requirement to allow any 'dev-' branch
