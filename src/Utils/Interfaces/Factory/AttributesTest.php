@@ -1,8 +1,8 @@
 <?php
 
-namespace Sfneal\Testing\Utils\Interfaces;
+namespace Sfneal\Testing\Utils\Interfaces\Factory;
 
-interface FactoryAttributesTest
+interface AttributesTest
 {
     /** @test */
     public function attributes_are_correct_types();

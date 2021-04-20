@@ -1,8 +1,8 @@
 <?php
 
-namespace Sfneal\Testing\Utils\Interfaces;
+namespace Sfneal\Testing\Utils\Interfaces\Factory;
 
-interface FactoryFillablesTest
+interface FillablesTest
 {
     /** @test */
     public function fillables_are_correct_types();
