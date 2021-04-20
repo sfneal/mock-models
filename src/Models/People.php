@@ -66,7 +66,7 @@ class People extends Model
     /**
      * User's address.
      *
-     * @return MorphOne|Address
+     * @return MorphOne
      */
     public function address()
     {
