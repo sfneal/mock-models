@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Sfneal\Testing\Tests;
-
 
 use Sfneal\Address\Models\Address;
 use Sfneal\Testing\Models\People;
