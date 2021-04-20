@@ -3,7 +3,6 @@
 namespace Sfneal\Testing\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Sfneal\Address\Providers\AddressServiceProvider;
 
 class MockModelsServiceProvider extends ServiceProvider
 {
