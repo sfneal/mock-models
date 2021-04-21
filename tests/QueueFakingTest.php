@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Sfneal\Testing\Tests;
-
 
 use Illuminate\Support\Facades\Queue;
 use Sfneal\Testing\Utils\Traits\QueueFaker;

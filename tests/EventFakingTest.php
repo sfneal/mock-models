@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Sfneal\Testing\Tests;
-
 
 use Illuminate\Support\Facades\Event;
 use Sfneal\Testing\Utils\Traits\EventFaker;
