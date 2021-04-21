@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Sfneal\Testing\Tests;
-
 
 use Illuminate\Http\Request;
 use Sfneal\Testing\Utils\Interfaces\RequestCreator;
