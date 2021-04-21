@@ -6,7 +6,6 @@ use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 use Sfneal\Address\Models\Address;
-use Sfneal\Address\Providers\AddressServiceProvider;
 use Sfneal\Testing\Models\People;
 use Sfneal\Testing\Providers\MockModelsServiceProvider;
 
@@ -24,7 +23,6 @@ class TestCase extends OrchestraTestCase
     {
         return [
             MockModelsServiceProvider::class,
-            AddressServiceProvider::class,
         ];
     }
 
