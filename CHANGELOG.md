@@ -23,3 +23,4 @@ All notable changes to `mock-models` will be documented in this file
 ## 0.3.0 - 2021-04-21
 - make `RequestCreator` interface for implementing custom request creators in test suites
 - add tests for `CreateRequest`, `EventFaker` & `QueueFaker` traits
+- add laravel/framework min version v8.34 composer requirement
