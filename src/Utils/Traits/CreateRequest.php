@@ -17,7 +17,12 @@ trait CreateRequest
      * @param null $content
      * @return Request
      */
-    protected function createRequest(array $headers = [], array $parameters = [], array $cookies = [], array $files = [], array $server = [], $content = null): Request
+    protected function createRequest(array $headers = [],
+                                     array $parameters = [],
+                                     array $cookies = [],
+                                     array $files = [],
+                                     array $server = [],
+                                     $content = null): Request
     {
         $request = Request::create('/', 'GET', $parameters, $cookies, $files, $server, $content);
 
