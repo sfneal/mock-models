@@ -1,10 +1,12 @@
 <?php
 
-namespace Sfneal\Testing\Utils\Traits;
+
+namespace Sfneal\Testing\Utils\Interfaces;
+
 
 use Illuminate\Http\Request;
 
-trait CreateRequest
+interface RequestCreator
 {
     /**
      * Create a Request to be used in test methods.
@@ -22,14 +24,5 @@ trait CreateRequest
                                   array $cookies = [],
                                   array $files = [],
                                   array $server = [],
-                                  $content = null): Request
-    {
-        $request = Request::create('/', 'GET', $parameters, $cookies, $files, $server, $content);
-
-        foreach ($headers as $header => $value) {
-            $request->headers->set($header, $value);
-        }
-
-        return $request;
-    }
+                                  $content = null): Request;
 }
