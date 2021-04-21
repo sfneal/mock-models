@@ -18,3 +18,8 @@ All notable changes to `mock-models` will be documented in this file
 
 ## 0.2.2 - 2021-04-20
 - fix sfneal/address composer requirement to allow any 'dev-' branch
+
+
+## 0.3.0 - 2021-04-21
+- make `RequestCreator` interface for implementing custom request creators in test suites
+- add tests for `CreateRequest`, `EventFaker` & `QueueFaker` traits
