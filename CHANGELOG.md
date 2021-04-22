@@ -24,3 +24,7 @@ All notable changes to `mock-models` will be documented in this file
 - make `RequestCreator` interface for implementing custom request creators in test suites
 - add tests for `CreateRequest`, `EventFaker` & `QueueFaker` traits
 - add laravel/framework min version v8.34 composer requirement
+
+
+## 0.3.1 - 2021-04-22
+- add registering of the `AddressServiceProvider` to `MockModelsServiceProvider`
