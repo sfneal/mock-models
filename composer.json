@@ -18,7 +18,7 @@
     "require": {
         "php": ">=7.3",
         "laravel/framework": ">=8.34",
-        "sfneal/address": "^1.2.2|dev-*",
+        "sfneal/address": "^1.2.2",
         "sfneal/models": "^2.2"
     },
     "require-dev": {
