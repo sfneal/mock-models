@@ -28,3 +28,4 @@ All notable changes to `mock-models` will be documented in this file
 
 ## 0.3.1 - 2021-04-22
 - add registering of the `AddressServiceProvider` to `MockModelsServiceProvider`
+- cut sfneal/address dev-master allowed version
