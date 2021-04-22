@@ -28,4 +28,4 @@ All notable changes to `mock-models` will be documented in this file
 
 ## 0.3.1 - 2021-04-22
 - add registering of the `AddressServiceProvider` to `MockModelsServiceProvider`
-- add "minimum-stability": "dev" to composer.json to try & fix issue with sfneal/address Travis CI pipeline
+- reformat sfneal/address version requirement
