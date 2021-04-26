@@ -27,6 +27,6 @@ class MigrationsTest extends TestCase
         $newPerson = People::query()->find($person->person_id);
 
         // Assert Jokes are the same
-        $this->modelAttributeAssertions($data, $newPerson);
+        $this->assertModelAttributesSame($data, $newPerson);
     }
 }
