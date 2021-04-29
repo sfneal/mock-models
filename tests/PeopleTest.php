@@ -2,11 +2,19 @@
 
 namespace Sfneal\Testing\Tests;
 
+use Database\Factories\PeopleFactory;
 use Sfneal\Address\Models\Address;
+use Sfneal\Builders\QueryBuilder;
 use Sfneal\Testing\Models\People;
 use Sfneal\Testing\Utils\Interfaces\CrudModelTest;
+use Sfneal\Testing\Utils\Interfaces\ModelBuilderTest;
+use Sfneal\Testing\Utils\Interfaces\ModelFactoryTest;
+use Sfneal\Testing\Utils\Interfaces\ModelRelationshipsTest;
 
-class PeopleTest extends TestCase implements CrudModelTest
+class PeopleTest extends TestCase implements CrudModelTest,
+                                             ModelBuilderTest,
+                                             ModelFactoryTest,
+                                             ModelRelationshipsTest
 {
     /** @test */
     public function records_can_be_created()
@@ -65,5 +73,32 @@ class PeopleTest extends TestCase implements CrudModelTest
         $this->assertInstanceOf(People::class, $person);
         $this->assertTrue($person->wasDeleted());
         $this->assertNull(People::query()->find($person->getKey()));
+    }
+
+    /** @test */
+    public function builder_is_accessible()
+    {
+        $builder = People::query();
+
+        $this->assertInstanceOf(QueryBuilder::class, $builder);
+        $this->assertIsString($builder->toSql());
+    }
+
+    /** @test */
+    public function factory_is_accessible()
+    {
+        $factory = People::factory();
+
+        $this->assertInstanceOf(PeopleFactory::class, $factory);
+    }
+
+    /** @test */
+    public function relationships_are_accessible()
+    {
+        // Find a random People model
+        $person = People::query()->first();
+
+        $this->assertNotNull($person->address);
+        $this->assertInstanceOf(Address::class, $person->address);
     }
 }
