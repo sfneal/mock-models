@@ -11,7 +11,8 @@ use Sfneal\Testing\Utils\Interfaces\ModelBuilderTest;
 use Sfneal\Testing\Utils\Interfaces\ModelFactoryTest;
 use Sfneal\Testing\Utils\Interfaces\ModelRelationshipsTest;
 
-class PeopleTest extends TestCase implements CrudModelTest,
+class PeopleTest extends TestCase implements
+    CrudModelTest,
                                              ModelBuilderTest,
                                              ModelFactoryTest,
                                              ModelRelationshipsTest
