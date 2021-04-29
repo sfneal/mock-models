@@ -33,3 +33,8 @@ All notable changes to `mock-models` will be documented in this file
 
 ## 0.4.0 - 2021-04-26
 - refactor `ModelAttributeAssertions` traits methods into `assertModelAttributesSame()` & `assertModelAttributesEqual()` methods
+
+
+## 0.5.0 - 2021-04-26
+- make `ModelBuilderTest`, `ModelFactoryTest` & `ModelRelationshipsTest` test interfaces
+- add use of new interfaces in `PeopleTest`
