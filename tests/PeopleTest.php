@@ -11,11 +11,7 @@ use Sfneal\Testing\Utils\Interfaces\ModelBuilderTest;
 use Sfneal\Testing\Utils\Interfaces\ModelFactoryTest;
 use Sfneal\Testing\Utils\Interfaces\ModelRelationshipsTest;
 
-class PeopleTest extends TestCase implements
-    CrudModelTest,
-                                             ModelBuilderTest,
-                                             ModelFactoryTest,
-                                             ModelRelationshipsTest
+class PeopleTest extends TestCase implements CrudModelTest, ModelBuilderTest, ModelFactoryTest, ModelRelationshipsTest
 {
     /** @test */
     public function records_can_be_created()
