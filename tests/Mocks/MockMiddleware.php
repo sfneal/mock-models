@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Sfneal\Testing\Tests\Mocks;
-
 
 use Closure;
 use Illuminate\Http\Request;
