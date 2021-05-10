@@ -38,3 +38,7 @@ All notable changes to `mock-models` will be documented in this file
 ## 0.5.0 - 2021-04-26
 - make `ModelBuilderTest`, `ModelFactoryTest` & `ModelRelationshipsTest` test interfaces
 - add use of new interfaces in `PeopleTest`
+
+
+## 0.6.0 - 2021-04-26
+- make `MiddlewareEnable` interface & `EnableMiddleware` trait for using middleware mocks in test suites
