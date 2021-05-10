@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Sfneal\Testing\Utils\Traits;
-
 
 use Illuminate\Support\Facades\Route;
 

@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Sfneal\Testing\Utils\Interfaces;
 
 interface MiddlewareEnabler
