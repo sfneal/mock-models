@@ -42,3 +42,7 @@ All notable changes to `mock-models` will be documented in this file
 
 ## 0.6.0 - 2021-05-10
 - make `MiddlewareEnable` interface & `EnableMiddleware` trait for using middleware mocks in test suites
+
+
+## 0.7.0 - 2021-07-08
+- make `InterfaceTest` interface for creating test classes that test interfaces
