@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Sfneal\Testing\Tests;
-
 
 use Sfneal\Testing\Utils\Interfaces\MiddlewareEnabler;
 use Sfneal\Testing\Utils\Traits\InterfaceTest;
@@ -29,7 +27,7 @@ class InterfaceTestTest extends TestCase
     public function classes(): array
     {
         return [
-            MiddlewareEnablerTest::class
+            MiddlewareEnablerTest::class,
         ];
     }
 
@@ -41,7 +39,7 @@ class InterfaceTestTest extends TestCase
     public function methods(): array
     {
         return [
-            'enableMiddleware'
+            'enableMiddleware',
         ];
     }
 }
