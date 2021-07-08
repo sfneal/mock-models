@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Sfneal\Testing\Utils\Interfaces;
-
 
 interface InterfaceTest
 {
