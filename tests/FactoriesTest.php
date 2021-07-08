@@ -8,8 +8,7 @@ use Sfneal\Testing\Utils\Interfaces\Factory\FillablesTest;
 use Sfneal\Testing\Utils\Interfaces\Factory\RelationshipAttributesTest;
 use Sfneal\Testing\Utils\Interfaces\Factory\RelationshipFillablesTest;
 
-class FactoriesTest extends TestCase implements
-    AttributesTest,
+class FactoriesTest extends TestCase implements AttributesTest,
                                                 FillablesTest,
                                                 RelationshipAttributesTest,
                                                 RelationshipFillablesTest
