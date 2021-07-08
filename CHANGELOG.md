@@ -45,4 +45,5 @@ All notable changes to `mock-models` will be documented in this file
 
 
 ## 0.7.0 - 2021-07-08
-- make `InterfaceTest` interface for creating test classes that test interfaces
+- make `InterfaceTest` trait for creating test classes that test interfaces
+- add `InterfaceTestTest` for testing `InterfaceTest` trait
