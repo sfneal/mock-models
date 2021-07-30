@@ -47,3 +47,7 @@ All notable changes to `mock-models` will be documented in this file
 ## 0.7.0 - 2021-07-08
 - make `InterfaceTest` trait for creating test classes that test interfaces
 - add `InterfaceTestTest` for testing `InterfaceTest` trait
+
+
+## 0.8.0 - 2021-07-30
+- fix issue with sfneal/address package interdependency by removing requirement and adding a package suggestion
