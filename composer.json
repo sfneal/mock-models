@@ -18,7 +18,8 @@
     "require": {
         "php": ">=7.3",
         "laravel/framework": ">=8.34",
-        "sfneal/models": "^2.2"
+        "sfneal/models": "^2.2",
+        "ext-json": "*"
     },
     "require-dev": {
         "orchestra/testbench": ">=6.7.1",
