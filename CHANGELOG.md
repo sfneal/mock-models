@@ -51,3 +51,8 @@ All notable changes to `mock-models` will be documented in this file
 
 ## 0.8.0 - 2021-07-30
 - fix issue with sfneal/address package interdependency by removing requirement and adding a package suggestion
+
+ 
+## 0.9.0 - 2021-08-04
+- make `AssertInterface` trait with custom assertion methods
+- refactor `ModelAttributeAssertions` trait to `AssertModelAttributes`
