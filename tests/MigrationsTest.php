@@ -3,11 +3,11 @@
 namespace Sfneal\Testing\Tests;
 
 use Sfneal\Testing\Models\People;
-use Sfneal\Testing\Utils\Traits\ModelAttributeAssertions;
+use Sfneal\Testing\Utils\Traits\AssertModelAttributes;
 
 class MigrationsTest extends TestCase
 {
-    use ModelAttributeAssertions;
+    use AssertModelAttributes;
 
     /** @test */
     public function people_table_is_accessible()
