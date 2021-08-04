@@ -56,3 +56,8 @@ All notable changes to `mock-models` will be documented in this file
 ## 0.9.0 - 2021-08-04
 - make `AssertInterface` trait with custom assertion methods
 - refactor `ModelAttributeAssertions` trait to `AssertModelAttributes`
+
+ 
+## 0.9.1 - 2021-08-04
+- make `AssertArrayValues` trait with custom assertion methods
+- add 'ext-json' to composer requirements
