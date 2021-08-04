@@ -43,9 +43,9 @@ trait AssertModelAttributes
      * @param string $method
      * @return void
      */
-    private static function assertModelAttributes(array  $data,
-                                                  Model  $model,
-                                                  array  $ignoredAttributes = null,
+    private static function assertModelAttributes(array $data,
+                                                  Model $model,
+                                                  array $ignoredAttributes = null,
                                                   string $method = 'assertSame'): void
     {
         // Remove ignore attributes
