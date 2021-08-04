@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 trait ModelAttributeAssertions
 {
+    // todo: add tests
+
     /**
      * Assert model attributes are same.
      *
