@@ -61,3 +61,7 @@ All notable changes to `mock-models` will be documented in this file
 ## 0.9.1 - 2021-08-04
 - make `AssertArrayValues` trait with custom assertion methods
 - add 'ext-json' to composer requirements
+
+
+## 0.9.2 - 2021-08-18
+- fix sfneal/address min version to v1.2 since broken v1.2.0 & v1.2.1 versions have been removed
