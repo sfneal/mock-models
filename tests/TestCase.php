@@ -16,7 +16,7 @@ class TestCase extends OrchestraTestCase
     /**
      * Register package service providers.
      *
-     * @param Application $app
+     * @param  Application  $app
      * @return array
      */
     protected function getPackageProviders($app)
@@ -29,7 +29,7 @@ class TestCase extends OrchestraTestCase
     /**
      * Define environment setup.
      *
-     * @param Application $app
+     * @param  Application  $app
      * @return void
      */
     protected function getEnvironmentSetUp($app)
