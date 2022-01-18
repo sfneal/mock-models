@@ -11,9 +11,9 @@ trait AssertModelAttributes
     /**
      * Assert model attributes are same.
      *
-     * @param array $data
-     * @param Model $model
-     * @param array|null $ignoredAttributes
+     * @param  array  $data
+     * @param  Model  $model
+     * @param  array|null  $ignoredAttributes
      * @return void
      */
     public static function assertModelAttributesSame(array $data, Model $model, array $ignoredAttributes = null): void
@@ -24,9 +24,9 @@ trait AssertModelAttributes
     /**
      * Assert model attributes are equal.
      *
-     * @param array $data
-     * @param Model $model
-     * @param array|null $ignoredAttributes
+     * @param  array  $data
+     * @param  Model  $model
+     * @param  array|null  $ignoredAttributes
      * @return void
      */
     public static function assertModelAttributesEqual(array $data, Model $model, array $ignoredAttributes = null): void
@@ -37,10 +37,10 @@ trait AssertModelAttributes
     /**
      * Assert model attributes.
      *
-     * @param array $data
-     * @param Model $model
-     * @param array|null $ignoredAttributes
-     * @param string $method
+     * @param  array  $data
+     * @param  Model  $model
+     * @param  array|null  $ignoredAttributes
+     * @param  string  $method
      * @return void
      */
     private static function assertModelAttributes(array $data,
