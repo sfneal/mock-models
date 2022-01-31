@@ -21,9 +21,8 @@ trait WithResponse
      */
     protected $response;
 
-
     /**
-     * Retrieve a 'GET' response using route & params
+     * Retrieve a 'GET' response using route & params.
      *
      * @return TestResponse
      */
