@@ -77,3 +77,7 @@ All notable changes to `mock-models` will be documented in this file
 
 ## 0.10.0 - 2022-01-31
 - add new `WithMemoryDbConnection` & `WithResponse` test case traits
+
+
+## 0.10.1 - 2022-01-31
+- fix issue with registering `AddressServiceProvider` when the 'sfneal/address' package isn't installed
