@@ -31,6 +31,9 @@ class MockModelsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->register(AddressServiceProvider::class);
+        // Only register provider if 'sfneal/address' is installed
+        if (class_exists(AddressServiceProvider::class)) {
+            $this->app->register(AddressServiceProvider::class);
+        }
     }
 }
