@@ -65,3 +65,15 @@ All notable changes to `mock-models` will be documented in this file
 
 ## 0.9.2 - 2021-08-18
 - fix sfneal/address min version to v1.2 since broken v1.2.0 & v1.2.1 versions have been removed
+
+
+## 0.9.3 - 2022-01-18
+- add new testing traits (`AssertDatabase`, `AssertModelBuilder` & `ModelProvider`)
+
+
+## 0.9.4 - 2022-01-18
+- fix issues with missing imports in `AssertModelBuilder` trait
+
+
+## 0.10.0 - 2022-01-31
+- add new `WithMemoryDbConnection` & `WithResponse` test case traits
