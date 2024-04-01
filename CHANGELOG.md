@@ -85,3 +85,7 @@ All notable changes to `mock-models` will be documented in this file
 
 ## 0.11.0 - 2024-04-01
 - upgrade sfneal/mock-models to latest version
+
+
+## 0.11.1 - 2024-04-01
+- cut support for PHP 7
