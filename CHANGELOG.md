@@ -81,3 +81,7 @@ All notable changes to `mock-models` will be documented in this file
 
 ## 0.10.1 - 2022-01-31
 - fix issue with registering `AddressServiceProvider` when the 'sfneal/address' package isn't installed
+
+
+## 0.11.0 - 2024-04-01
+- upgrade sfneal/mock-models to latest version
