@@ -9,7 +9,7 @@ trait AssertArrayValues
     /**
      * Assert that an array has a value.
      *
-     * @param $needle
+     * @param  $needle
      * @param  array  $haystack
      */
     public function assertArrayHasValue($needle, array $haystack)
@@ -22,7 +22,7 @@ trait AssertArrayValues
     /**
      * Assert that an array does not have a value.
      *
-     * @param $needle
+     * @param  $needle
      * @param  array  $haystack
      */
     public function assertArrayNotHasValue($needle, array $haystack)
