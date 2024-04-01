@@ -10,9 +10,9 @@ use Sfneal\Testing\Utils\Interfaces\Factory\RelationshipFillablesTest;
 
 class FactoriesTest extends TestCase implements
     AttributesTest,
-                                                FillablesTest,
-                                                RelationshipAttributesTest,
-                                                RelationshipFillablesTest
+    FillablesTest,
+    RelationshipAttributesTest,
+    RelationshipFillablesTest
 {
     /**
      * @var People

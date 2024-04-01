@@ -45,7 +45,7 @@ class People extends Model
     /**
      * Query Builder.
      *
-     * @param $query
+     * @param  $query
      * @return QueryBuilder
      */
     public function newEloquentBuilder($query)
@@ -96,7 +96,7 @@ class People extends Model
     /**
      * Retrieve the 'age' attribute.
      *
-     * @param $value
+     * @param  $value
      * @return int
      */
     public function getAgeAttribute($value): int
