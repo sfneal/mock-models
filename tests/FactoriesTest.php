@@ -46,7 +46,7 @@ class FactoriesTest extends TestCase implements
     {
         // Name attributes
         $this->assertIsString($this->model->name_full);
-        $this->assertStringContainsString(', ', $this->model->name_last_first);
+        $this->assertStringContainsString(', ', $this->model->getNameLastFirstAttribute());
         $this->assertStringContainsString($this->model->name_first, $this->model->name_full);
         $this->assertStringContainsString($this->model->name_last, $this->model->name_full);
     }
