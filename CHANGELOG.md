@@ -91,3 +91,7 @@ All notable changes to `mock-models` will be documented in this file
 - cut support for PHP 7
 - add support for PHP 8.1, 8.2 & 8.3
 - bump test suite dependencies to latest installable versions
+
+
+## 0.11.2 - 2024-05-02
+- add new GitHub actions
