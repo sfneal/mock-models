@@ -2,6 +2,7 @@
 
 namespace Sfneal\Testing\Tests;
 
+use PHPUnit\Framework\Attributes\Test;
 use Sfneal\Testing\Models\People;
 use Sfneal\Testing\Utils\Traits\AssertModelAttributes;
 
@@ -9,7 +10,7 @@ class MigrationsTest extends TestCase
 {
     use AssertModelAttributes;
 
-    /** @test */
+    #[Test]
     public function people_table_is_accessible()
     {
         // Expected data

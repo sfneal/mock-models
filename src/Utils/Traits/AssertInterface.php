@@ -2,9 +2,11 @@
 
 namespace Sfneal\Testing\Utils\Traits;
 
+use PHPUnit\Framework\Attributes\Test;
+
 trait AssertInterface
 {
-    /** @test */
+    #[Test]
     public function interface_exist()
     {
         $this->assertTrue(
@@ -13,7 +15,7 @@ trait AssertInterface
         );
     }
 
-    /** @test */
+    #[Test]
     public function interface_is_implemented()
     {
         foreach ($this->classes() as $class) {
@@ -21,7 +23,7 @@ trait AssertInterface
         }
     }
 
-    /** @test */
+    #[Test]
     public function interface_methods_exist()
     {
         foreach ($this->methods() as $method) {

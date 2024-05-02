@@ -3,6 +3,7 @@
 namespace Sfneal\Testing\Tests;
 
 use Database\Factories\PeopleFactory;
+use PHPUnit\Framework\Attributes\Test;
 use Sfneal\Address\Models\Address;
 use Sfneal\Builders\QueryBuilder;
 use Sfneal\Testing\Models\People;
@@ -13,7 +14,7 @@ use Sfneal\Testing\Utils\Interfaces\ModelRelationshipsTest;
 
 class PeopleTest extends TestCase implements CrudModelTest, ModelBuilderTest, ModelFactoryTest, ModelRelationshipsTest
 {
-    /** @test */
+    #[Test]
     public function records_can_be_created()
     {
         // Create a new Model
@@ -25,7 +26,7 @@ class PeopleTest extends TestCase implements CrudModelTest, ModelBuilderTest, Mo
         $this->assertInstanceOf(Address::class, $person->address);
     }
 
-    /** @test */
+    #[Test]
     public function records_can_be_updated()
     {
         // Find a random People model
@@ -58,7 +59,7 @@ class PeopleTest extends TestCase implements CrudModelTest, ModelBuilderTest, Mo
         $this->assertSame('MASSACHUSETTS', $updatedPerson->address->state);
     }
 
-    /** @test */
+    #[Test]
     public function records_can_be_deleted()
     {
         // Find a random People model
@@ -72,7 +73,7 @@ class PeopleTest extends TestCase implements CrudModelTest, ModelBuilderTest, Mo
         $this->assertNull(People::query()->find($person->getKey()));
     }
 
-    /** @test */
+    #[Test]
     public function builder_is_accessible()
     {
         $builder = People::query();
@@ -81,7 +82,7 @@ class PeopleTest extends TestCase implements CrudModelTest, ModelBuilderTest, Mo
         $this->assertIsString($builder->toSql());
     }
 
-    /** @test */
+    #[Test]
     public function factory_is_accessible()
     {
         $factory = People::factory();
@@ -89,7 +90,7 @@ class PeopleTest extends TestCase implements CrudModelTest, ModelBuilderTest, Mo
         $this->assertInstanceOf(PeopleFactory::class, $factory);
     }
 
-    /** @test */
+    #[Test]
     public function relationships_are_accessible()
     {
         // Find a random People model

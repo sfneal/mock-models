@@ -2,8 +2,10 @@
 
 namespace Sfneal\Testing\Utils\Interfaces\Factory;
 
+use PHPUnit\Framework\Attributes\Test;
+
 interface FillablesTest
 {
-    /** @test */
+    #[Test]
     public function fillables_are_correct_types();
 }

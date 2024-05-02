@@ -2,6 +2,7 @@
 
 namespace Sfneal\Testing\Tests;
 
+use PHPUnit\Framework\Attributes\Test;
 use Sfneal\Testing\Models\People;
 use Sfneal\Testing\Utils\Interfaces\Factory\AttributesTest;
 use Sfneal\Testing\Utils\Interfaces\Factory\FillablesTest;
@@ -32,7 +33,7 @@ class FactoriesTest extends TestCase implements
         $this->model = People::query()->get()->shuffle()->first();
     }
 
-    /** @test */
+    #[Test]
     public function fillables_are_correct_types()
     {
         $this->assertIsString($this->model->name_first);
@@ -41,7 +42,7 @@ class FactoriesTest extends TestCase implements
         $this->assertIsInt($this->model->age);
     }
 
-    /** @test */
+    #[Test]
     public function attributes_are_correct_types()
     {
         // Name attributes
@@ -51,7 +52,7 @@ class FactoriesTest extends TestCase implements
         $this->assertStringContainsString($this->model->name_last, $this->model->name_full);
     }
 
-    /** @test */
+    #[Test]
     public function relationship_fillables_are_correct_types()
     {
         $this->assertIsString($this->model->address->address_1);
@@ -61,7 +62,7 @@ class FactoriesTest extends TestCase implements
         $this->assertIsString($this->model->address->zip);
     }
 
-    /** @test */
+    #[Test]
     public function relationship_attributes_are_correct_types()
     {
         // Address attributes

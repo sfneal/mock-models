@@ -2,8 +2,10 @@
 
 namespace Sfneal\Testing\Utils\Interfaces;
 
+use PHPUnit\Framework\Attributes\Test;
+
 interface ModelFactoryTest
 {
-    /** @test */
+    #[Test]
     public function factory_is_accessible();
 }
