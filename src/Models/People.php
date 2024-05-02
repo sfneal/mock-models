@@ -4,6 +4,7 @@ namespace Sfneal\Testing\Models;
 
 use Database\Factories\PeopleFactory;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Sfneal\Address\Models\Address;
@@ -80,7 +81,7 @@ class People extends Model
      */
     public function getNameFullAttribute(): string
     {
-        return "{$this->name_first} {$this->name_last}";
+        return $this->attributes['name_first'].' '.$this->attributes['name_last'];
     }
 
     /**
@@ -90,17 +91,18 @@ class People extends Model
      */
     public function getNameLastFirstAttribute(): string
     {
-        return "{$this->name_last}, {$this->name_first}";
+        return $this->attributes['name_last'].', '.$this->attributes['name_first'];
     }
 
     /**
      * Retrieve the 'age' attribute.
      *
-     * @param  $value
-     * @return int
+     * @return Attribute
      */
-    public function getAgeAttribute($value): int
+    public function age(): Attribute
     {
-        return intval($value);
+        return Attribute::make(
+            get: fn ($value) => intval($value)
+        );
     }
 }
