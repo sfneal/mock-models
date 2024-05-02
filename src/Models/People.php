@@ -34,7 +34,7 @@ class People extends Model
     ];
 
     protected $appends = [
-        'name_full'
+        'name_full',
     ];
 
     /**
