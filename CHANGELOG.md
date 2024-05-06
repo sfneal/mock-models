@@ -100,3 +100,4 @@ All notable changes to `mock-models` will be documented in this file
 ## 0.12.0 - 2024-05-06
 - cut support for PHP 8.1
 - add support for Laravel v11
+- fix test suite version constraints
