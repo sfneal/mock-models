@@ -17,15 +17,14 @@
     ],
     "require": {
         "php": "^8.1",
-        "laravel/framework": ">=8.34",
-        "sfneal/models": "^2.2|^3.0",
+        "laravel/framework": "^8.75|^9.0|^10.0|^11.0",
+        "sfneal/models": "^4.0",
         "ext-json": "*"
     },
     "require-dev": {
         "orchestra/testbench": "^7.40|^8.0|9.0",
         "phpunit/phpunit": "^9.6|^10.0|^11.0",
-        "scrutinizer/ocular": "^1.8",
-        "sfneal/address": "^1.2|^2.0"
+        "sfneal/address": "^1.2|^2.0|^3.0"
     },
     "suggest": {
         "sfneal/address": "Allows for use of `People` model's 'address' relationship"

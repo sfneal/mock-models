@@ -33,6 +33,10 @@ class People extends Model
         'age',
     ];
 
+    protected $appends = [
+        'name_full',
+    ];
+
     /**
      * Model Factory.
      *

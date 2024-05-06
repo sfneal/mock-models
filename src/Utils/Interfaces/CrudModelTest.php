@@ -2,14 +2,16 @@
 
 namespace Sfneal\Testing\Utils\Interfaces;
 
+use PHPUnit\Framework\Attributes\Test;
+
 interface CrudModelTest
 {
-    /** @test */
+    #[Test]
     public function records_can_be_created();
 
-    /** @test */
+    #[Test]
     public function records_can_be_updated();
 
-    /** @test */
+    #[Test]
     public function records_can_be_deleted();
 }
