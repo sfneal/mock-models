@@ -93,6 +93,9 @@ All notable changes to `mock-models` will be documented in this file
 - bump test suite dependencies to latest installable versions
 
 
-## 0.12.0 - 2024-05-02
+## 0.11.2 - 2024-05-02
 - add new GitHub actions
-- add support for Laravel v11
+
+
+## 0.12.0 - 2024-05-06
+- cut support for PHP 8.1

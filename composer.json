@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "php": "^8.0",
+        "php": "^8.1",
         "laravel/framework": "^8.75|^9.0|^10.0|^11.0",
         "sfneal/models": "^4.0",
         "ext-json": "*"
@@ -48,7 +48,7 @@
         }
     },
     "scripts": {
-        "test": "vendor/bin/phpunit --testdox",
+        "test": "vendor/bin/phpunit",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
         "upload-coverage": "php vendor/bin/ocular code-coverage:upload --format=php-clover phpunit.xml.dist",
         "update-test": "composer --prefer-stable update && composer test && composer update --prefer-lowest && composer test && composer update"
