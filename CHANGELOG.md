@@ -95,3 +95,7 @@ All notable changes to `mock-models` will be documented in this file
 
 ## 0.11.2 - 2024-05-02
 - add new GitHub actions
+
+
+## 0.12.0 - 2024-05-06
+- cut support for PHP 8.1
