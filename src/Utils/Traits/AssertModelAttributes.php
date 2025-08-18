@@ -16,7 +16,7 @@ trait AssertModelAttributes
      * @param  array|null  $ignoredAttributes
      * @return void
      */
-    public static function assertModelAttributesSame(array $data, Model $model, array $ignoredAttributes = null): void
+    public static function assertModelAttributesSame(array $data, Model $model, ?array $ignoredAttributes = null): void
     {
         self::assertModelAttributes($data, $model, $ignoredAttributes, 'assertSame');
     }
@@ -29,7 +29,7 @@ trait AssertModelAttributes
      * @param  array|null  $ignoredAttributes
      * @return void
      */
-    public static function assertModelAttributesEqual(array $data, Model $model, array $ignoredAttributes = null): void
+    public static function assertModelAttributesEqual(array $data, Model $model, ?array $ignoredAttributes = null): void
     {
         self::assertModelAttributes($data, $model, $ignoredAttributes, 'assertEquals');
     }
@@ -45,7 +45,7 @@ trait AssertModelAttributes
      */
     private static function assertModelAttributes(array $data,
                                                   Model $model,
-                                                  array $ignoredAttributes = null,
+                                                  ?array $ignoredAttributes = null,
                                                   string $method = 'assertSame'): void
     {
         // Remove ignore attributes

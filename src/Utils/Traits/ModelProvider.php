@@ -13,7 +13,7 @@ trait ModelProvider
      * @param  int|null  $limit
      * @return array
      */
-    protected function modelsProvider(string $modelClass, int $limit = null): array
+    protected function modelsProvider(string $modelClass, ?int $limit = null): array
     {
         $this->refreshApplication();
 
